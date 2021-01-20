@@ -5,7 +5,7 @@
 
 using namespace std;
 
-namespace Try
+namespace One
 {
 
     int x = 5;
@@ -18,6 +18,6 @@ namespace Try
 
 int main(){
 
-    Try::printX();
+    One::printX();
 
 }
