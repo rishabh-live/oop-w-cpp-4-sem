@@ -30,3 +30,4 @@ Hello World
 
 *Actual*
 
+![Q1 Output Png](../outputs/Lab_1_1.png)
