@@ -1,40 +1,30 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
-
 int main()
 {
-
-    const int width = 48;
-    const int height = 32;
-
-    char board[width][height];
-
-    int i = 0;
-    int j = 0;
-
-    for (i = 0; i <= width; ++i)
-    {
-        for (j = 0; j <= height; ++j)
-        {
-            if (i % 6 == 0 || j % 4 == 0)
-                cout << "+";
-
-            if (i % 6 > 0 || j % 4 == 0)
-                cout << "-";
-
-            if (i % 6 == 0 || j % 4 > 0)
-                cout << "|";
-
-            if (1 % 6 > 0 || j % 4 > 0)
-                cout << " ";
-        }
-        cout << "\n";
-    }
-
-    cout << "\nPress enter to exit";
-    cin.ignore(cin.rdbuf()->in_avail() + 1);
-
-    return 0;
+	int n;
+	cout<<"Enter Grid Size: ";
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		for(int j=1;j<=n;j++)
+		{
+			cout<<"+-----";
+		}
+		cout<<"+"<<endl;
+		for(int j=1;j<=3;j++)
+		{
+			for(int k=1;k<=n;k++)
+			{
+				cout<<"|     ";
+			}
+			cout<<"|"<<endl;
+		}
+	}
+	for(int j=1;j<=n;j++)
+		{
+			cout<<"+-----";
+		}
+		cout<<"+"<<endl;
+	return 0;
 }
