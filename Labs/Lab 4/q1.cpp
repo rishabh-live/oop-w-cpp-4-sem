@@ -12,32 +12,54 @@ using namespace std;
 
 class Matrix{
     private:
-
+        int m,n; 
+        int A[10][10],B[10][10],SUM[10][10],Sub[20][20],mlt[20][20],Trans[20][20],choice;
     public:
-        addMatrix();
-        subtractMatrix();
-        multiplyMatrix();
-        transposeMatrix();
-        resetMatrix();
+        void addMatrix();
+        void subtractMatrix();
+        void multiplyMatrix();
+        void transposeMatrix();
+        void resetMatrix();
+        void showMenu();
+};
+
+void Matrix::addMatrix(){
+    for (int i=0;i<m;i++){
+                           
+                       for (int i=0;i<m;i++)
+
+                           for (int j=0;j<n;j++)
+                           {
+
+
+                                   cout << SUM[i][j] << " \n"[j == n-1];
+                           }
+                           }
 }
 
-Matrix::addMatrix(){
-    cout << "Done";
-}
-
-Matrix::subtractMatrix(){
+void Matrix::subtractMatrix(){
     cout << "Cool";
 }
 
-Matrix::multiplyMatrix(){
+void Matrix::multiplyMatrix(){
     cout << "Multiply Success";
 }
 
-Matrix::transposeMatrix(){
+void Matrix::transposeMatrix(){
     cout << "Transpose Success";
+}
+void Matrix::showMenu(){
+    cout<<"Enter which operation you want to perform \n Add Matrix --> 1 \n Sub Matrix --> 2 \n Mul Matrix --> 3 \n Tra Matrix --> 4 \n";
+    cin>>choice;
+    cout<<"Enter number of raws and columns"<<endl;
+    cin>>m>>n;
 }
 
 int main(){
-    Matrix matrix;
+    Matrix mtrix;
+
+    mtrix.showMenu();
+
+
     return 0;
 }
