@@ -20,6 +20,10 @@ class calculateArea{
         void display(string text){
             cout << text << " " << area << endl;
         }
+
+        void display(){
+            cout << " Calculated area for given inputs are : " << area << endl;
+        }
         void takeInput(){
             cout << "Enter Height : ";
             cin >> a;
@@ -37,6 +41,8 @@ int main(){
     calculateArea square;
 
     square.display("Calulated Square width :");
+
+    square.display();
 
     return 0;
 }
