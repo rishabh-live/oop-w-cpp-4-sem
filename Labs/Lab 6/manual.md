@@ -8,7 +8,7 @@
 
 #### Regno. - 201800631
 
-#### Semester - 6th
+#### Semester - 4th
 
 #### GitHub - [https://github.com/rishabh-live/oop-w-cpp-4-sem/tree/main/Labs](https://github.com/rishabh-live/oop-w-cpp-4-sem/tree/main/Labs)
 
